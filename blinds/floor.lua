@@ -4,7 +4,8 @@ local blind = {
         text = { '$0 blind reward' }
     },
     dollars = 0,
-    boss = { min = 2, max = 10 },
+    -- Added weight = 1 to prevent SMODS from injecting a boolean
+    boss = { min = 2, max = 10, weight = 1 },
     boss_colour = HEX("8befc5"),
     atlas = "mathblinds",
     pos = { x = 0, y = 16},

@@ -3,7 +3,8 @@ local blind = {
         name = 'The Radical',
         text = { 'All enhanced cards',  'are debuffed' }
     },
-    boss = { min = 2, max = 10 },
+    -- Added weight = 1 to prevent SMODS from injecting a boolean
+    boss = { min = 2, max = 10, weight = 1 }, 
     boss_colour = HEX("54a74b"),
     atlas = "mathblinds",
     pos = { x = 0, y = 3},
